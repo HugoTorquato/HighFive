@@ -1,0 +1,56 @@
+{% extends 'head.html' %}
+{% block content %}
+{% load staticfiles %}
+<!--contact start here-->
+<div class="contact">
+	<div class="contact-main">
+	   <div class="container">
+			<div class="contact-top">
+				<h1>Contato</h1>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+			</div>
+			<div class="contact-bottom">
+			  <form>
+				<div class="col-md-7 contact-left wow slideInLeft" data-wow-delay="0.3s">
+					<p>Nome</p>
+		             <input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"/>
+		            <p>E-mail</p> 
+		             <input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"/>
+		            <p>Assunto</p>
+		             <input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"/>
+		            <p>Telefone</p>
+		             <input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"/>
+				</div>
+				<div class="col-md-5 contact-right wow slideInRight" data-wow-delay="0.3s">
+					<p>Menssagem</p>
+					  <textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"> </textarea>
+		             <input type="submit" value="Enviar">
+				 </div>
+				 <div class="clearfix"> </div>
+			  </form>
+			</div>
+		</div>
+	</div>
+</div>
+<!--contact end here-->
+<!--map start here-->
+<div class="map">
+	<div class="container">
+		<div class="col-md-7 map-left wow slideInLeft" data-wow-delay="0.3s">
+			<h2>Informações para contato</h2>
+				      <P>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</P>
+				     <div class="addre">
+					      <h4>Endereço</h4>
+					      <p>Endereço : Rua São João, Predio E-6, Apartamento 402, Bairro Juca Batista, Itabira-MG, Brasil</p>
+						  <p>CEP : Letraset sheets </p>
+						  <p>Telefone : +55 (31) 99199 - 9200</p>
+						  <p>E-mail : <a href="mailto:ProtesesHighFive@gmail.com">ProtesesHighFive@gmail.com</a></p>
+					 </div>
+		</div>
+		<div class="col-md-5 map-right wow slideInRight" data-wow-delay="0.3s">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387144.007583421!2d-73.97800349999999!3d40.7056308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1415253431785"> </iframe>
+	   </div>
+	</div>
+</div>
+<!--map end here-->
+{% endblock %}

@@ -1,0 +1,205 @@
+{% extends 'head.html' %}
+{% load staticfiles %}
+{% block content %}
+<!--banner start here-->
+ <div class="banner">
+ 		<div class="banner-main">
+	 	   <section class="slider">
+			 <div class="flexslider">
+				<ul class="slides">
+				  <li>
+				  	<div class="banner-bottom">
+				  		<div class="container">
+					  		<div class="bann-text wow bounceInRight" data-wow-delay="0.3s">
+							 	<h3>Choose Us</h3>
+							 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>	
+						 	</div>			 	
+					   </div>
+				 	</div>
+				  </li>
+				  <li>
+				  	<div class="banner-bottom1">
+				  		<div class="container">
+					  		<div class="bann-text wow bounceInRight" data-wow-delay="0.3s">
+							 	<h3>Choose Us</h3>
+							 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>	
+						 	</div>			 	
+					   </div>
+				 	</div>
+				  </li>
+				  <li>
+				  	<div class="banner-bottom2">
+				  		<div class="container">
+					  		<div class="bann-text wow bounceInRight" data-wow-delay="0.3s">
+							 	<h3>Choose Us</h3>
+							 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>	
+						 	</div>			 	
+					   </div>
+				 	</div>
+				  </li>				  
+			    </ul>
+			 </div>
+			 <div class="clearfix"> </div>
+		   </section>
+ 		</div>
+ </div>
+<!--banner end here-->
+<!-- FlexSlider -->
+				  <script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
+				  <script type="text/javascript">
+					$(function(){				 
+					});
+					$(window).load(function(){
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						  $('body').removeClass('loading');
+						}
+					  });
+					});
+				  </script>
+<!-- FlexSlider -->
+<!--banner-info strat here-->
+<!--social-media strat here-->
+<div class="social-media">
+	<div class="container">
+		<div class="social-main">
+			<div class="col-md-5 social-left wow bounceInLeft" data-wow-delay="0.3s">
+				<h2>Media Social</h2>
+				<p>Siga nossas páginas e receba as ultimas notícias.</p>
+			</div>
+			<div class="col-md-7 social-right wow bounceInRight" data-wow-delay="0.3s">
+				<ul>
+					<li><a href="https://www.facebook.com/HighFiveProteses/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					
+				</ul>
+			</div>
+		  <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--social media end here-->
+<!--bann below grid start here-->
+<div class="bann-grid">
+	<div class="container">
+		<div class="bann-grid-main wow bounceInRight" data-wow-delay="0.3s">
+			<div class="col-md-3 bann-works">
+				<div class="ban-setting">
+				  <img src="{% static 'images/adahand.jpg' %}" alt="" class="img-responsive">
+				       <div class="captn">
+							<h4>Open Bionics</h4>							
+						</div>
+                 </div>
+				<h6>Ada hand</h6>
+			</div>
+			<div class="col-md-3 bann-works">
+				<div class="ban-setting">
+				  <img src="{% static 'images/finger.jpg' %}" alt="" class="img-responsive">
+				      <div class="captn">
+							<h4>E-nable</h4>							
+						</div>
+                 </div>
+				<h6>Knick Finger</h6>
+			</div>
+			<div class="col-md-3 bann-works">
+				<div class="ban-setting">
+				  <img src="{% static 'images/Flexyhand.jpg' %}" alt="" class="img-responsive">
+				      <div class="captn">
+							<h4>E-nable</h4>							
+						</div>
+                 </div>
+				<h6>Flexy hand</h6>
+			</div>
+			<div class="col-md-3 bann-works">
+				<div class="ban-setting">
+				  <img src="{% static 'images/limbtless.jpg' %}" alt="" class="img-responsive">
+				      <div class="captn">
+							<h4>E-nable</h4>							
+						</div>
+                 </div>
+				<h6>Limbitless Arm</h6>
+			</div>
+		  <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--bann beloew end here-->
+<!--your fitness start here-->
+<div class="fitness">
+	<div class="container">
+		<div class="fitness-main">
+			<div class="fitness-top wow ">
+				<h1>At vero eos et accusamus et iusto</h1>
+			     <iframe width="560" height="315"  src="https://www.youtube.com/embed/I3cf49c_WjE" frameborder="0" allowfullscreen></iframe>
+            </div>
+			<div class="fitness-bottom row">				
+				<div class="fitness-rit fit-center">
+					<h4></h4>
+					<p>Um pequeno gesto que se torna a felicidade incondicional de uma pessoa. Sendo esse um dos objetivos do grupo, trabalhamos para um dia ser a causa da alegria de uma pessoa, provendo a ela uma melhor qualidade de vida e autonomia nos constante desafios enfrentados no dia a dia.</p>
+                    <p>Ajudenos a continuar a desenvolver esse projeto e levar essa mesma alegria para outras pessoas :</p>
+                </div>
+                <div style="padding:50px;float:right" class="col-md-3">
+				     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                         <input type="hidden" name="cmd" value="_s-xclick">
+                         <input type="hidden" name="hosted_button_id" value="W4FXJNAUZ2Q4W">
+                         <input type="image" src="https://www.paypalobjects.com/pt_BR/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
+                         <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="2" height="1">
+                    </form>
+				</div>
+                </div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+<!--your fitness end here-->
+<!--testimo start here-->
+<div class="testimo">
+	<div class="container">
+		<div class="testiom-main">
+			 <h2>Testimonial</h2>
+			<ul class="rslides" id="slider2">
+	      <li>
+			<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete.</p>
+			<h4>Malorum</h4>
+	      </li>
+	      <li>	      
+			<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete.</p>
+			<h4>Bonorum</h4>
+	      	</li>
+	      <li>
+			<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete.</p>
+			<h4>Rackham</h4>
+	      </li>
+	    </ul>
+		</div>
+	</div>
+</div>
+<!--testimo end here-->
+<div class="beauty-grid">
+	<div class="container">
+		<div class="beauty-grid-main">
+			 <div class="col-md-6 beauty-grid-left wow slideInLeft" data-wow-delay="0.3s">
+			 	<h3>Our Class</h3>
+                 <iframe src="https://www.youtube.com/embed/-A6fAfLDgc0" frameborder="0" allowfullscreen></iframe>
+			 </div>
+			 <div class="col-md-6 beauty-grid-right wow slideInRight" data-wow-delay="0.3s">
+			 	<h3>Temporibus autem</h3>
+			 	<div class="beauty-text">
+			 		<h4>Human happiness</h4>
+			 		<p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+			 		<h4>Omnis voluptas</h4>
+			 		<p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>	
+			 		<a href="single.html" class="hvr-underline-from-left">Read More</a>
+                    
+			 	</div>
+            </div>
+		  <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--testimo-->
+{% endblock %}

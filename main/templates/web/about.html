@@ -1,0 +1,202 @@
+{% extends 'head.html' %}
+{% load staticfiles %}
+{% block content%}
+<!--about start here-->
+<div class="about">
+	<div class="container">
+		<div class="about-main">
+		  <div class="about-top">
+			<h1>Sobre nós</h1>
+			<p></p>
+		  </div>
+		  <div class="about-bottom wow"> <!--slideInRight" data-wow-delay="0.3s">-->
+		  	<img src="{% static 'images/ab.jpg' %}" alt="" class="img-responsive">
+		  	<h2>Righteous indignation and dislike</h2>
+		  	<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
+		  </div>
+		 <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--about grid start here-->
+<div class="our-history">
+	<div class="container">
+		<div class="our-history">
+			<div class="history-top">
+				<h3>Nossa História</h3>
+				<p></p>
+			</div>
+			<div class="history-bottom"> 
+				<div class="col-md-6 history-left  wow"> <!--slideInRight" data-wow-delay="0.3s">-->
+					<p>	Apesar da ainda curta caminhada do grupo, muito já foi aprendido, mas muito mais ainda há de ser feito para que esse projeto saída do papel e atinja, de forma positiva, a vida da sociedade local em um primeiro momento, e quem sabe expandir quando consolidado como ONG.<!--Vou deixar como ONG mas a medida que decidir pode mudar--></p>
+				</div>
+				<div class="col-md-6 history-right  wow"> <!--slideInRight" data-wow-delay="0.3s">-->
+					<div class="item item-type-move">
+						<a class="item-hover" href="#">						
+							<div class="item-info">
+								<div class="headline">
+									Our Class
+									<div class="line"> </div>
+								</div>
+								<div class="date">February 29, 2016</div>							
+							</div>
+							<div class="mask"> </div>
+					    </a>
+						<div class="item-img">
+								<img src="{% static 'images/a1.jpg' %}" class="img-responsive" alt="">
+						</div>
+					</div>
+					 <div class="clearfix"> </div>
+				</div>
+			   <div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--about grid end here-->
+<script>
+    $(document).ready(function(){
+        
+        $('#Joao').click(function(){
+            $('.team-info').fadeOut('slow');
+            $('#Joao-info').fadeIn('slow');
+        });
+        $('#Hugo').click(function(){
+            $('.team-info').fadeOut('slow');
+            $('#Hugo-info').fadeIn('slow');
+        });
+        $('#Joice').click(function(){
+            $('.team-info').fadeOut('slow');
+            $('#Joice-info').fadeIn('slow');
+        });
+        $('#Walter').click(function(){
+            $('.team-info').fadeOut('slow');
+            $('#Walter-info').fadeIn('slow');
+        });
+         $('#Giovane').click(function(){
+            $('.team-info').fadeOut('slow');
+            $('#Giovane-info').fadeIn('slow');
+        });
+         $('#Karen').click(function(){
+            $('.team-info').fadeOut('slow');
+            $('#Karen-info').fadeIn('slow');
+        });
+    });
+</script>
+<!--team start here-->
+<div class="team">
+	<div class="container">
+		<div class="team-main wow zoomIn" data-wow-delay="0.3s">
+			<h4>Nosso time</h4>
+			  <ul class="ch-grid">
+					<li>
+						<div class="ch-item ch-img-1" id="Joao">				
+							<div class="ch-info-wrap">
+								<div class="ch-info wrap1">
+									<div class="ch-info-front ch-img-1"></div>
+									<div class="ch-info-back">
+										<h3>João Moraes</h3>									
+									</div>	
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-2" id="Hugo">
+							<div class="ch-info-wrap">
+								<div class="ch-info wrap2">
+									<div class="ch-info-front ch-img-2"></div>
+									<div class="ch-info-back">
+										<h3>Hugo Torquato</h3> <!--Colocar foto-->										
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-3" id="Joice">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-3"></div>
+									<div class="ch-info-back">
+										<h3>Joice Kelly</h3>										
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="ch-item ch-img-4" id="Walter">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-4"></div>
+									<div class="ch-info-back">
+										<h3>Walter Soares</h3>										
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+                    <li>
+						<div class="ch-item ch-img-4" id="Giovane">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-4"></div>
+									<div class="ch-info-back">
+										<h3>Giovane</h3>	<!--Colocar nome completo e foto-->									
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+                    <li>
+						<div class="ch-item ch-img-4" id="Karen">
+							<div class="ch-info-wrap">
+								<div class="ch-info">
+									<div class="ch-info-front ch-img-4"></div>
+									<div class="ch-info-back">
+										<h3>Karen</h3>		<!--Colocar nome completo e foto-->								
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+                
+		 </div>
+	</div>
+</div>
+<!--team end here-->
+<!--Team info-->
+<div class="team-info" id="Joao-info">
+    <h3>João de Moraes</h3><br> <!-- Falta texto-->
+    <p><i class="fa fa-quote-left" aria-hidden="true"></i> A ONG HighFive terá muitas tarefas que trará experiências únicas a minha carreira acadêmica e profissional, isso pois essa ONG trás o benefício a todos aqueles que não tem condições de ter uma prótese de mão de qualidade para possam ter uma vida mais feliz para a realização das tarefas diárias. Assim, com a força de vontade e o conhecimento adquirido em pesquisas e com os estudos fornecidos pela UNIFEI poderemos ter grandes avanços para a realização de um bom trabalho e isso foi o que me incentivou para que eu pudesse fazer parte desse grupo com pessoas extremamente profissionais e com ideias incríveis. <i class="fa fa-quote-right" aria-hidden="true"></i></p><br>
+    <a href="https://br.linkedin.com/in/joao-de-moraes-914739105"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+</div>
+<div class="team-info" id="Hugo-info">
+    <h3>Hugo Torquato</h3><br>
+    <p><i class="fa fa-quote-left" aria-hidden="true"></i> Como aluno do curso de Engenharia elétrica  da Unifei- Universidade Federal de Itajubá campus itabira, obtive, junto a High Five uma oportunidade única de ajudar o próximo, no caso, promover um movimento de âmbito social que, particularmente, achei muito bonito ao ser convidado a participar. Por já conhecer pessoas, ainda quando criança,  que necessitavam esse tipo de ajuda e mesmo com as dificuldades não paravam de trabalhar ou exercer suas funções, se tornou uma motivação a parte para colocar essa ideia para frente. <i class="fa fa-quote-right" aria-hidden="true"></i></p><br>
+    <a href="https://www.linkedin.com/in/enio-vieira-171864b7"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+</div>
+<div class="team-info" id="Joice-info">
+    <h3>Joice Kelly</h3><br>
+    <p><i class="fa fa-quote-left" aria-hidden="true"></i> Joice Kelly Duarte Gonçalves, 20. Graduanda em Engenharia Elétrica pela Universidade Federal de Itajubá, Campus Itabira. Natural de Pará de Minas, cresceu em um ambiente familiar onde trabalhos voluntários sempre fizeram parte de sua rotina, portanto, desde sempre foi amplamente incentivada a desenvolver atividades direcionadas à ajuda ao próximo. Sendo assim, viu no High Five uma excelente oportunidade de crescimento, tanto pessoal como profissional. “Me sinto muito realizada sabendo que posso fazer parte da grande mudança que as próteses trarão à vida de muitas pessoas que precisam e não teriam condições próprias de adquiri-las”. <i class="fa fa-quote-right" aria-hidden="true"></i></p><br>
+    <a href="https://www.linkedin.com/in/joice-kelly-duarte-gonçalves-340097126/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+</div>
+<div class="team-info" id="Walter-info">
+    <h3>Walter Soares</h3><br>
+    <p><i class="fa fa-quote-left" aria-hidden="true"></i> Nossa ong é responsavel por unir dois fatores os quais eu sou completamente apaixonado, a tecnologia e a solidariedade. Participar desse grupo me motiva a sempre querer conhecer coisa novas que podem ajudar a humanidade, sempre lutando por um mundo mais justo e que todos possam ter as mesmas oportunidades. <i class="fa fa-quote-right" aria-hidden="true"></i></p><br>
+    <a href="https://www.linkedin.com/in/walter-soares-31a19411b/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+</div>
+<div class="team-info" id="Giovane-info">
+    <h3>Giovane</h3><br><!--Colocar nome copleto-->
+    <p><i class="fa fa-quote-left" aria-hidden="true"></i> Acho que desde que eu era criança. eu me lembro de ver as pessoas que tinham algum tipo de deficiência motora ou física, e eu pensava que tinha de ter um jeito de preencher o vazio físico e emocional que aquilo causava na pessoa. Por isso, que quando comecei a cursar engenharia, eu sabia aonde eu queria me aventurar. <i class="fa fa-quote-right" aria-hidden="true"></i></p><br>
+    <a href="https://www.linkedin.com/in/walter-soares-31a19411b/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+</div>
+<div class="team-info" id="Karen-info">
+    <h3>Karen</h3><br> <!--Colocar nome copleto--> <!-- Falta texto-->
+    <p><i class="fa fa-quote-left" aria-hidden="true"></i> A ONG HighFive terá muitas tarefas que trará experiências únicas a minha carreira acadêmica e profissional, isso pois essa ONG trás o benefício a todos aqueles que não tem condições de ter uma prótese de mão de qualidade para possam ter uma vida mais feliz para a realização das tarefas diárias. Assim, com a força de vontade e o conhecimento adquirido em pesquisas e com os estudos fornecidos pela UNIFEI poderemos ter grandes avanços para a realização de um bom trabalho e isso foi o que me incentivou para que eu pudesse fazer parte desse grupo com pessoas extremamente profissionais e com ideias incríveis. <i class="fa fa-quote-right" aria-hidden="true"></i></p><br>
+    <a href="https://www.linkedin.com/in/walter-soares-31a19411b/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+</div>
+<!--about end here-->
+{% endblock %}
